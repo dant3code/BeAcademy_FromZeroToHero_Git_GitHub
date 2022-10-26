@@ -1,0 +1,51 @@
+CONFIGURAR USUÁRIO NO GIT:
+$ git config --global user.name "Fulano de Tal"
+$ git config --global user.email fulanodetal@exemplo.br
+
+-TESTAR CONFIGURAÇÕES:
+git config --list
+
+-INICIAR UM REPOSITÓRIO VAZIO
+git init
+
+-VERIFICAR STATUS
+git status
+
+-PREPARAR O DOMUMENTO QUE DESEJA COMMITAR*
+git add "Nome do documento"
+
+REVERTE O COMMIT
+git rm --cached "Nome do documento"
+
+-PREPARAR TODOS OS DOMUMENTO QUE DESEJA COMMITAR*
+git add .
+
+-REALIZAR COMMIT
+git commit -m "Versão Inicial"
+
+-HISTÓRICO DE ALTERAÇÕES
+git log
+
+-MOSTRAR QUAIS BRANCHs DISPONÍVEIS
+git branch
+
+-CRIAR BRANCH (PASTA)
+git branch "nome"
+
+-NAVEGAR DE UMA BRANCH PARA OUTRA
+git branch checkout "nome"
+
+-CRIAR BRANCH (PASTA) e já acessar ela diretamente
+git checkout -b "nome"
+
+-REMOVER ALGUMA BRANCH
+git checkout -d "nome"
+
+-CLONA A BRACH (É NECESSÁRIO ESTAR NA BRACH QUE DESEJA TRAZER OS ARQUIVOS E DIGITAR A BRACH QUE DESEJA CLONAR)
+git merge "nome da brach que deseja clonar"
+
+
+*** Branch = ramificação do sistema
+*** Commit = salvar a alteração
+
+*Não utilizar aspas, colocar somente o nome

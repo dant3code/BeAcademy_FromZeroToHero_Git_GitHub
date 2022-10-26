@@ -1,0 +1,72 @@
+mkdir (criar pasta)
+touch (criar arquvio)
+cat (ver o arquivo)
+head (ver as 10 primeiras linhas de um arquivo)
+ls (listar conteúdo da pasta)
+cd (mudar pasta)
+rm (remover/excluir)
+grep (pesquisa um termo dentro do arquivo)
+=====================================================
+
+-Como configurar git no terminal
+
+git config --global user.name COLOQUEAQUISEUUSUÁRIO
+git config --global user.mail COLOQUEAQUISEUEMAIL
+
+
+git config -- list (lista as configurações do git)
+
+=====================================================
+-Como clonar repositório do remoto para local
+git clone COLOQUEAQUIOLINKDOREPOSITORIO
+
+- Criar modificar arquivos
+git status
+
+- Escolher arquivos que queremos salvar na nova versão
+git add . (este "." seguinifica todos os arquivos)
+
+- Salvar nova versão GIT
+git commit -m "Mensagem descrição"
+
+- Ver histórico de mudançar 
+git log
+
+- Enviamos a nova versão para atualizar o reposiótiro remoto
+git push
+
+- sair
+q+enter
+
+======================
+Iniciando projeto com GIT >> Criar novo repositório pelo terminal
+
+-Comando para iniciar git
+git init
+
+(ls -a) lista diretórios escondidos
+(ls -a .git) lista o que tem dentro da pasta .git (oculta)
+
+Iniciando arquivo com VIM
+
+comando:
+vim file.txt
+i (insere o texto)
+esc
+:wq (escreva e saia)
+
+Adicione o ponto na histório
+git add .
+
+- Salvar nova versão GIT
+git commit -m "Mensagem"
+
+- Ver histórico de mudançar 
+git log
+
+- Enviamos a nova versão para atualizar o reposiótiro remoto
+git push
+
+====================================
+- VERIFICA AS URLs DE ORIGEM DOS REPOSITÓRIOS REMOTOS
+git remote -v
